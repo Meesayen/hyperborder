@@ -85,6 +85,13 @@ module.exports.decorateConfig = config => {
         left: ${configObj.borderWidth};
         right: ${configObj.borderWidth};
         margin-top: ${configObj.headerMarginTop};
+        margin-bottom: 0;
+      }
+      .hyper_main .footer_footer {
+        border-radius: 0 0 ${configObj.borderWidth} ${configObj.borderWidth};
+        bottom: ${configObj.borderWidth};
+        left: ${configObj.borderWidth};
+        right: ${configObj.borderWidth};
       }
       .header_windowHeaderWithBorder {
         left: ${configObj.borderWidth};
