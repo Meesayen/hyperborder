@@ -38,6 +38,7 @@ module.exports.decorateConfig = config => {
   const configObj = Object.assign({
     animate: false,
     coverBackgroundColor: 'rgba(0, 0, 0, .8)',
+    footerBackgroundColor: 'rgba(0, 0, 0, .9)',
     headerMarginTop: '38px',
     borderWidth: '4px',
     borderColors: defaultColors,
@@ -80,14 +81,13 @@ module.exports.decorateConfig = config => {
       }
       .hyper_main .terms_terms {
         background: ${configObj.coverBackgroundColor};
-        border-radius: 0 0 ${configObj.borderWidth} ${configObj.borderWidth};
         bottom: ${configObj.borderWidth};
         left: ${configObj.borderWidth};
         right: ${configObj.borderWidth};
         margin-top: ${configObj.headerMarginTop};
-        margin-bottom: 0;
       }
       .hyper_main .footer_footer {
+        background: ${configObj.footerBackgroundColor};
         border-radius: 0 0 ${configObj.borderWidth} ${configObj.borderWidth};
         bottom: ${configObj.borderWidth};
         left: ${configObj.borderWidth};
